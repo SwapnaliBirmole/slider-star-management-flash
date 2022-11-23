@@ -1,0 +1,43 @@
+button:not(:disabled) {
+  cursor: pointer;
+}
+.pill,
+.btn-pill {
+  border-radius: 50rem;
+}
+.title-l-34 {
+  font-family: 'SEGOEUIL', 'Segoe UI Light', 'Segoe UI';
+  font-size: 34px;
+  line-height: 1.25;
+}
+.bg-orange {
+  background-color: #f88d2a;
+  color: white;
+  text-decoration: none;
+}
+.bg-orange:hover {
+  color: white;
+  background-color: #031461;
+  cursor: pointer;
+}
+.title-r-34 {
+  font-family: 'SEGOEUI', 'Segoe UI Regular', 'Segoe UI';
+  font-size: 34px;
+  color: #1d4189;
+}
+.text-orange {
+  color: #f88d2a;
+}
+.title-b-48 {
+  font-family: 'SEGOEUIB', 'Segoe UI Bold', 'Segoe UI';
+  font-size: 48px;
+  font-weight: 800;
+}
+.title-r-20 {
+  font-family: 'SEGOEUI', 'Segoe UI Regular', 'Segoe UI';
+  font-size: 20px;
+  color: #1d4189;
+}
+.text-blue {
+  color: #1a428a;
+}

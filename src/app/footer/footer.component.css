@@ -1,0 +1,15 @@
+.star-added {
+  background-color: #1a428a;
+  padding: 50px;
+  text-align: center;
+  display: block;
+}
+.title-l-56 {
+  font-family: 'SEGOEUIL', 'Segoe UI Light', 'Segoe UI';
+  font-size: 56px;
+}
+.title-l-36 {
+  font-family: 'SEGOEUIL', 'Segoe UI Light', 'Segoe UI';
+  font-size: 36px;
+  line-height: 1.25;
+}

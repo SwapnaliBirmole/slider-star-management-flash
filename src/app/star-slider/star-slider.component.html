@@ -1,0 +1,81 @@
+<div style="position:relative;">
+  <div class="up">
+    <button
+      (click)="slickController.next()"
+      class="btn btn-sucees rounded-pill"
+    >
+      Next
+    </button>
+  </div>
+  <div slickContainer #slickController="slick" [slickConfig]="config">
+    <ng-container *ngIf="slickController.initialize" style="margin-top:7px;">
+      <!-- <img
+        slickItem
+        *ngFor="let item of getArray(arrayLength); let index = index"
+        src="https://placeholder.pics/svg/400/DEDEDE/555555/{{ index + 1 }}"
+        class="p-10"
+      /> -->
+      <div
+        class="m-0 tsb-box mt-40 mt-xl-30 mb-20 tsb"
+        slickItem
+        *ngFor="let item of getArray(arrayLength); let index = index"
+      >
+        <div
+          class="
+            d-flex
+            flex-wrap
+            justify-content-between
+            align-items-top
+            star-box
+            pe-4
+            pt-3
+            pb-1
+          "
+        >
+          <div class="w-auto me-4 align-start">
+            <img src="assets/img/star-blue-b.png" alt="" width="80px" />
+          </div>
+          <div class="col w-75">
+            <h4 class="title-b-28 fw-bolder">Victoria Wellington</h4>
+            <span class="text-blue">9/14/22 by Robert Copeland</span>
+            <p class="title-r-20">
+              <span
+                class="d-inline-block show-more"
+                ngxTruncateText
+                [number]="50"
+                more="more>"
+                less="<less"
+                [hashtag]="true"
+                [highlightList]="coloredList"
+                [highlightCondition]="'like'"
+              >
+                {{ text }}
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <!-- 
+<button (click)="arrayLength = arrayLength - 1">-</button>
+{{ arrayLength }}
+<button (click)="arrayLength = arrayLength + 1">+</button> -->
+  <div class="down">
+    <button
+      (click)="slickController.prev()"
+      class="btn btn-sucees rounded-pill"
+    >
+      Previous
+    </button>
+  </div>
+  <!-- <button (click)="slickController.goTo(4)">Go to 4</button>
+<button (click)="slickController.play()">Play</button>
+<button (click)="slickController.pause()">Pause</button>
+<button (click)="slickController.unslick()" [disabled]="!slickController.initialize">Destroy</button>
+<button (click)="slickController.initSlick()" [disabled]="slickController.initialize">Init</button> -->
+</div>
+
+<!-- <pre>
+  config: {{ config | json }}
+</pre> -->
